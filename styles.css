@@ -262,7 +262,7 @@ header .advarsel p {
 /*                           By og info (Main-info)                           */
 /* -------------------------------------------------------------------------- */
 .mainInfo {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -286,7 +286,7 @@ header .advarsel p {
 .kort {
   background-color: red;
   height: 25em;
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   position: relative;
 }
@@ -330,7 +330,7 @@ header .advarsel p {
 .currentDay {
   text-align: center;
   background-color: rgba(224, 224, 224, 0.767);
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   padding: 1em 0;
   border-radius: 10px;
@@ -365,7 +365,7 @@ header .advarsel p {
   -ms-grid-columns: (MINMAX(MAX(15%, 0rem), 0.5fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, MINMAX(MAX(15%, 0rem), 0.5fr));
   background-color: lightgray;
-  width: 75vw;
+  width: 85vw;
   margin: 0 auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -407,7 +407,7 @@ header .advarsel p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 75vw;
+  width: 85vw;
   margin: 1em auto;
 }
 
@@ -446,25 +446,67 @@ header .advarsel p {
 /*                                 Seven Days                                 */
 /* -------------------------------------------------------------------------- */
 .sevenDays {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
-  padding: 1em 0;
   background-color: #c8c8c8;
+  padding-bottom: .5em;
 }
 
 .sevenDays .header {
+  color: #fbfbfb;
   display: -ms-grid;
   display: grid;
   text-align: center;
+  padding: 1em 0;
   -ms-grid-columns: (MINMAX(MAX(15%, 0rem), 0.5fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, MINMAX(MAX(15%, 0rem), 0.5fr));
+  margin-bottom: .8em;
+  background-color: #10658e;
 }
 
 .sevenDays .diagramTwo {
-  background-color: #717171;
-  width: 75vw;
-  height: 10em;
-  margin: 0 auto;
+  /* background-color: rgb(113, 113, 113); */
+  margin: .5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (MINMAX(MAX(5%, 0rem), 0.5fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, MINMAX(MAX(5%, 0rem), 0.5fr));
+}
+
+@media only screen and (max-width: 50em) {
+  .sevenDays .diagramTwo {
+    -ms-grid-columns: (MINMAX(MAX(20%, 5rem), 0.5fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, MINMAX(MAX(20%, 5rem), 0.5fr));
+  }
+}
+
+.sevenDays .diagramTwo div {
+  background-color: #e08787;
+  height: 100%;
+  width: 5.8em;
+  display: -ms-grid;
+  display: grid;
+  min-height: 10em;
+}
+
+@media only screen and (max-width: 50em) {
+  .sevenDays .diagramTwo div {
+    margin-bottom: 1em;
+  }
+}
+
+.sevenDays .diagramTwo div i {
+  font-size: 2.5rem;
+  margin: .2em auto;
+}
+
+.sevenDays .diagramTwo div .tempInfo {
+  font-size: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-decoration: underline;
 }
 
 /* -------------------------------------------------------------------------- */

@@ -214,7 +214,7 @@ header {
 /*                           By og info (Main-info)                           */
 /* -------------------------------------------------------------------------- */
 .mainInfo {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   
   display: grid;
@@ -235,7 +235,7 @@ header {
 .kort {
   background-color: red;
   height: 25em;
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   position: relative;
   .filter {
@@ -280,7 +280,7 @@ header {
 .currentDay {
   text-align: center;
   background-color: rgba(224, 224, 224, 0.767);
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   padding: 1em 0;
   border-radius: 10px;
@@ -307,7 +307,7 @@ header {
       }
     }
     background-color: rgb(211, 211, 211);
-    width: 75vw;
+    width: 85vw;
     margin: 0 auto;
     height: fit-content;
     padding: 2em 0;
@@ -332,7 +332,7 @@ header {
     }
     display: flex;
     justify-content: center;
-    width: 75vw;
+    width: 85vw;
     margin: 1em auto;
     .questionMark {
       padding: 1em 0;
@@ -363,20 +363,48 @@ header {
 /*                                 Seven Days                                 */
 /* -------------------------------------------------------------------------- */
 .sevenDays {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
-  padding: 1em 0;
   background-color: rgb(200, 200, 200);
+  padding-bottom: .5em;
   .header {
+    color: #fbfbfb;
     display: grid;
     text-align: center;
+    padding: 1em 0;
     grid-template-columns: repeat(auto-fit, MINMAX(MAX(15%, 0rem), 0.5fr));
+    margin-bottom: .8em;
+    background-color: #10658e;
   }
   .diagramTwo {
-    background-color: rgb(113, 113, 113);
-    width: 75vw;
-    height: 10em;
-    margin: 0 auto;
+    /* background-color: rgb(113, 113, 113); */
+    
+    margin: .5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, MINMAX(MAX(5%, 0rem), 0.5fr));
+    @media only screen and (max-width: 50em) {
+      grid-template-columns: repeat(auto-fit, MINMAX(MAX(20%, 5rem), 0.5fr));
+    }
+    div{
+      background-color: rgb(224, 135, 135);
+      height: 100%;
+      width: 5.8em;
+      display: grid;
+      min-height: 10em;
+      @media only screen and (max-width: 50em) {
+        margin-bottom: 1em;
+      }
+      i{
+        font-size: 2.5rem;
+        margin: .2em auto;
+      }
+      .tempInfo{
+        font-size: .5rem;
+        display: flex;
+        width: 100%;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
