@@ -448,7 +448,7 @@ header .advarsel p {
 .sevenDays {
   width: 80vw;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em 0;
   background-color: #c8c8c8;
 }
 
